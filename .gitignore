@@ -1,0 +1,24 @@
+# Build artifacts
+build/
+sdkconfig.old
+
+# Dependencies
+managed_components/
+
+# Python virtual environment
+.venv/
+venv/
+
+# IDE specific files
+.vscode/*.user
+.vscode/*.suo
+.vscode/*.bak
+.vscode/settings.json
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+
+# Other
+*.pyc
+*.swp
+*~
+.DS_Store
