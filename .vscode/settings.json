@@ -2,5 +2,6 @@
   "C_Cpp.intelliSenseEngine": "default",
   "idf.espIdfPath": "/home/andrey/esp/v5.5/esp-idf",
   "idf.toolsPath": "/home/andrey/.espressif",
-  "idf.pythonInstallPath": "/home/andrey/.pyenv/shims/python"
+  "idf.pythonInstallPath": "/home/andrey/.pyenv/shims/python",
+  "idf.port": "/dev/ttyACM0"
 }
