@@ -9,7 +9,7 @@
 #define RMT_LED_STRIP_GPIO_NUM      16
 
 // IMPORTANT: Set this to the number of LEDs you have currently soldered (e.g., 12, 24, 36...)
-#define EXAMPLE_LED_NUMBERS         72
+#define EXAMPLE_LED_NUMBERS         61
 
 static const char *TAG = "diag_tool";
 
