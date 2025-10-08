@@ -34,3 +34,12 @@ The project includes a launch configuration for debugging the ESP-IDF applicatio
 ### Testing
 
 The project uses the `pytest-embedded` framework to run tests on the target hardware. The test cases are located in the `pytest_led_strip.py` file. The tests work by flashing the application to the target device and then verifying the console output to ensure that the application is behaving as expected.
+
+### Історія Змін (Change History)
+
+- **Інтеграція MIDI:** Додано логіку для роботи з USB MIDI клавіатурою.
+- **Виявлення пристрою:** Реалізовано механізм опитування (polling) для надійного виявлення підключення USB пристрою, оскільки стандартні колбеки не спрацьовували.
+- **Ініціалізація пристрою:** Створено машину станів для коректної послідовності ініціалізації MIDI-клавіатури (відкриття, отримання дескрипторів, захоплення інтерфейсу).
+- **Виправлення критичної помилки:** Усунено збій програми (`assert failed`), що виникав при динамічному парсингу USB-дескрипторів. Проблема була вирішена шляхом використання статичних, заздалегідь відомих значень для інтерфейсу та кінцевої точки MIDI.
+- **Отримання нот:** Виправлено логіку парсингу MIDI-повідомлень для коректного зчитування номерів натиснутих нот.
+- **Поточний стан:** Програма успішно отримує та розпізнає ноти, що граються на MIDI-клавіатурі. Проте, спостерігаються затримки в реакції світлодіодної стрічки, які потребують подальшого вирішення.
